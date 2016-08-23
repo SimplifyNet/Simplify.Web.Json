@@ -1,0 +1,14 @@
+version: '{build}'
+branches:
+  only:
+  - master
+skip_tags: true
+configuration: Release
+platform: Any CPU
+clone_depth: 1
+before_build:
+- cmd: '"src/.nuget/NuGet.exe" restore src/Simplify.Web.Json.sln'
+build:
+  publish_nuget: true
+  parallel: true
+  verbosity: minimal
