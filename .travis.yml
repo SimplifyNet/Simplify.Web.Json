@@ -1,0 +1,13 @@
+branches:
+ only:
+  - develop
+  - master
+
+git:
+ depth: 1
+
+language: csharp
+solution: src/Simplify.Web.Json.sln
+
+script:
+ - xbuild /p:Platform="Any CPU" /p:Configuration=Release src/Simplify.Web.sln /tv:12.0
