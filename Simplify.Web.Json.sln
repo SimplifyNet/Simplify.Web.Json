@@ -7,8 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplify.Web.Json", "Simpli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{76127232-0D28-470C-8DBB-149F0A2679E9}"
 	ProjectSection(SolutionItems) = preProject
-		Simplify.Web.Json\.nuget\NuGet.Config = Simplify.Web.Json\.nuget\NuGet.Config
-		Simplify.Web.Json\.nuget\NuGet.exe = Simplify.Web.Json\.nuget\NuGet.exe
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
 	EndProjectSection
 EndProject
 Global
