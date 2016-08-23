@@ -7,7 +7,7 @@ git:
  depth: 1
 
 language: csharp
-solution: src/Simplify.Web.Json.sln
+solution: Simplify.Web.Json.sln
 
 script:
- - xbuild /p:Platform="Any CPU" /p:Configuration=Release src/Simplify.Web.sln /tv:12.0
+ - xbuild /p:Platform="Any CPU" /p:Configuration=Release Simplify.Web.Json.sln /tv:12.0
