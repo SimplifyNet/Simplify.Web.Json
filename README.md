@@ -5,7 +5,7 @@ Simplify.Web.Json
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v0-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v0.9-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.Json.png)](http://nugetstatus.com/packages/Simplify.Web.Json) |
 
