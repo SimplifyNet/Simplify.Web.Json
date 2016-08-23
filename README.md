@@ -39,6 +39,6 @@ public void Configuration(IAppBuilder app)
 	...
 	HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
 
-	app.UseAcspNet();
+	app.UseSimplifyWeb();
 }
 ```
