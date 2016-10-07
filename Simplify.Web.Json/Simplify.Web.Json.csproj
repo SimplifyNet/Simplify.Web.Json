@@ -59,8 +59,8 @@
       <HintPath>..\packages\Simplify.Templates.1.2.1\lib\net45\Simplify.Templates.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Simplify.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Simplify.Web.1.0.0\lib\net452\Simplify.Web.dll</HintPath>
+    <Reference Include="Simplify.Web, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simplify.Web.1.0.1\lib\net452\Simplify.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -70,7 +70,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Simplify.Web.Json.nuspec" />
+    <None Include="Simplify.Web.Json.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
