@@ -12,8 +12,7 @@
 		<description>$description$</description>
 		<summary>$description$</summary>
 		<releaseNotes>
-			+ HTTP status code added as second optional parameter
-			* Upgrade to Simplify.Web 1.0.1
+			* Response with default HTTP 200 status code fixed
 		</releaseNotes>
 		<copyright>Licensed under LGPL</copyright>
 		<language>en-US</language>

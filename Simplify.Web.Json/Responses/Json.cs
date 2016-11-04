@@ -21,15 +21,6 @@ namespace Simplify.Web.Json.Responses
 		/// Initializes a new instance of the <see cref="Json"/> class.
 		/// </summary>
 		/// <param name="objectToConvert">The object to convert to JSON.</param>
-		public Json(object objectToConvert)
-		{
-			_objectToConvert = objectToConvert;
-		}
-
-		/// <summary>
-		/// Initializes a new instance of the <see cref="Json"/> class.
-		/// </summary>
-		/// <param name="objectToConvert">The object to convert to JSON.</param>
 		/// <param name="statusCode">The HTTP response status code.</param>
 		public Json(object objectToConvert, int statusCode = 200)
 		{
