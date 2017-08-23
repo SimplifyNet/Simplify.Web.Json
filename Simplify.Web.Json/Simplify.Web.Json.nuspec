@@ -12,7 +12,8 @@
 		<description>$description$</description>
 		<summary>$description$</summary>
 		<releaseNotes>
-			* Response with default HTTP 200 status code fixed
+			* Upgrade to Simplify.Web 1.2
+			* Upgrade to Newtonsoft.Json 10.0.3
 		</releaseNotes>
 		<copyright>Licensed under LGPL</copyright>
 		<language>en-US</language>
