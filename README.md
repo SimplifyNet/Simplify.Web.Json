@@ -1,6 +1,6 @@
 # Simplify.Web.Json
 
-`Simplify.Web.Json` is a package which provides JSON controller response for controllers and JSON view model binder for [Simplify.Web web-framework](https://github.com/i4004/Simplify.Web).
+`Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/i4004/Simplify.Web) web-framework controllers.
 
 ## Package status
 
@@ -16,7 +16,7 @@
 
 # Examples
 
-### Sending JSON to client
+## Sending JSON to client
 
 Framework execution will be stopped, object will be parsed to JSON string and sent to client
 ```csharp
@@ -30,9 +30,9 @@ public class MyController : Controller
 }
 ```
 
-### Getting JSON from client
+## Getting JSON from client
 
-#### Registering binder
+### Registering binder
 
 ```csharp
 public void Configuration(IAppBuilder app)
@@ -43,7 +43,9 @@ public void Configuration(IAppBuilder app)
 	app.UseSimplifyWeb();
 }
 ```
-####  Accessing model parsed from json data sent from client
+###  Accessing model
+
+JSON string will be deserialized to the controller model on first model access
 ```csharp
 public class MyController : Controller<MyModel>
 {
