@@ -1,5 +1,4 @@
-Simplify.Web.Json
-===
+# Simplify.Web.Json
 
 `Simplify.Web.Json` is a package which provides JSON controller response for controllers and JSON view model binder for [Simplify.Web web-framework](https://github.com/i4004/Simplify.Web).
 
@@ -15,24 +14,26 @@ Simplify.Web.Json
 | :------ | :------ | :------: |
 | **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) | [![Travis Build Status](https://travis-ci.org/i4004/Simplify.Web.Json.svg?branch=master)](https://travis-ci.org/i4004/Simplify.Web.Json) |
 
-## Examples
+# Examples
 
-#### Using JSON controller response
+### Sending JSON to client
 
-Framework execution will be stopped and object will be parsed to JSON string and sent to client
+Framework execution will be stopped, object will be parsed to JSON string and sent to client
 ```csharp
-	public class MyController : Controller
+public class MyController : Controller
+{
+	public override ControllerResponse Invoke()
 	{
-		public override ControllerResponse Invoke()
-		{
-			return new Json(myObj);
-		}
+		...
+		return new Json(myObj);
 	}
+}
 ```
 
-#### Using JSON view model binder
+### Getting JSON from client
 
-Registering binder:
+#### Registering binder
+
 ```csharp
 public void Configuration(IAppBuilder app)
 {
@@ -40,5 +41,15 @@ public void Configuration(IAppBuilder app)
 	HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
 
 	app.UseSimplifyWeb();
+}
+```
+####  Accessing model parsed from json data sent from client
+```csharp
+public class MyController : Controller<MyModel>
+{
+	public override ControllerResponse Invoke()
+	{
+		Model.
+	}
 }
 ```
