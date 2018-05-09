@@ -4,21 +4,21 @@
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.1.2-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.1.3-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.Json.png)](http://nugetstatus.com/packages/Simplify.Web.Json) |
 
 ## Build status
 
-| | **.NET (4.5.2)** | **Mono (Latest)** |
-| :------ | :------ | :------: |
-| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) | [![Travis Build Status](https://travis-ci.org/i4004/Simplify.Web.Json.svg?branch=master)](https://travis-ci.org/i4004/Simplify.Web.Json) |
+| Branch | **.NET (4.5.2)** |
+| :------ | :------ |
+| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) |
 
 # Examples
 
 ## Sending JSON to client
 
-Framework execution will be stopped, object will be parsed to JSON string and sent to client
+If the controller returns `Json` response class object, then the Framework execution will be stopped, object will be parsed to JSON string and sent to client
 ```csharp
 public class MyController : Controller
 {
