@@ -1,5 +1,4 @@
-﻿using System.IO;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Simplify.Web.ModelBinding;
 
 namespace Simplify.Web.Json.ModelBinding.Binders
@@ -17,7 +16,9 @@ namespace Simplify.Web.Json.ModelBinding.Binders
 		public void Bind<T>(ModelBinderEventArgs<T> args)
 		{
 			if (args.Context.Request.ContentType.Contains("application/json"))
-				args.SetModel(JsonConvert.DeserializeObject<T>(new StreamReader(args.Context.Request.Body).ReadToEnd()));
+			{
+				args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
+			}
 		}
 	}
 }
