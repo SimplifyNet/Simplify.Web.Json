@@ -8,6 +8,9 @@ clone_depth: 1
 configuration: Release
 platform: Any CPU
 
+before_build:
+  - nuget restore
+
 build:
   project: Simplify.Web.Json.sln  
   publish_nuget: true
