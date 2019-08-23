@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json;
-using Simplify.Web.ModelBinding;
+﻿using Simplify.Web.ModelBinding;
+using System.Text.Json;
 
 namespace Simplify.Web.Json.ModelBinding.Binders
 {
@@ -17,7 +17,7 @@ namespace Simplify.Web.Json.ModelBinding.Binders
 		{
 			if (args.Context.Request.ContentType.Contains("application/json"))
 			{
-				args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
+				args.SetModel(JsonSerializer.Deserialize<T>(args.Context.RequestBody));
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
 
 namespace Simplify.Web.Json.Responses
 {
@@ -37,7 +37,7 @@ namespace Simplify.Web.Json.Responses
 			Context.Response.ContentType = "application/json";
 			Context.Response.StatusCode = _statusCode;
 
-			ResponseWriter.Write(JsonConvert.SerializeObject(_objectToConvert), Context.Response);
+			ResponseWriter.Write(JsonSerializer.Serialize(_objectToConvert), Context.Response);
 
 			return ControllerResponseResult.RawOutput;
 		}
