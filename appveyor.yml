@@ -2,19 +2,11 @@ version: '{build}'
 
 image: Visual Studio 2017
 
-branches:
-  only:
-  - master
-  - develop
-
 skip_tags: true
 clone_depth: 1
 
 configuration: Release
 platform: Any CPU
-
-before_build:
-- cmd: '".nuget/NuGet.exe" restore Simplify.Web.Json.sln'
 
 build:
   publish_nuget: true
