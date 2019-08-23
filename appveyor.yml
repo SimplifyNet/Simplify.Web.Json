@@ -9,6 +9,7 @@ configuration: Release
 platform: Any CPU
 
 build:
+  project: Simplify.Web.Json.sln  
   publish_nuget: true
   parallel: true
   verbosity: minimal
