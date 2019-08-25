@@ -17,6 +17,9 @@ namespace Simplify.Web.Json.ModelBinding.Binders
 		{
 			if (args.Context.Request.ContentType.Contains("application/json"))
 			{
+				if (string.IsNullOrEmpty(args.Context.RequestBody))
+					throw new ModelValidationException("JSON request body is null or empty");
+
 				args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
 			}
 		}

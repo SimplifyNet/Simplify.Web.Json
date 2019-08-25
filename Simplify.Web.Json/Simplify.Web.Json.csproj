@@ -5,15 +5,14 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web JSON controller response and model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.2.1</Version>
+		<Version>1.2.2</Version>
 		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.Json</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/i4004/Simplify.Web.Json</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
-			* Upgrade to Simplify.Web 2.1
-			* Upgrade to Newtonsoft.Json 12.0.2
+			* Checking request body for null or empty values
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
