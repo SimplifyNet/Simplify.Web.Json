@@ -1,19 +1,19 @@
 # Simplify.Web.Json
 
-`Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/i4004/Simplify.Web) web-framework controllers.
+`Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers.
 
 ## Package status
 
 | Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.2.3-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
 | :------ | :------: |
-| **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.Json.png)](http://nugetstatus.com/packages/Simplify.Web.Json) |
+| **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json.svg)](https://libraries.io/nuget/Simplify.Web.Json) |
 | **Target Frameworks** | 4.6.2, Standard 2.0 |
 
 ## Build status
 
 | Branch | Status |
 | :------ | :------ |
-| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) |
+| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/SimplifyNet/simplify-web-json/branch/master) |
 
 ## Examples
 
