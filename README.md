@@ -13,7 +13,7 @@
 
 | Branch | Status |
 | :------ | :------ |
-| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/SimplifyNet/simplify-web-json/branch/master) |
+| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) |
 
 ## Examples
 
