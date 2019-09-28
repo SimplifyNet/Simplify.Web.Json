@@ -4,15 +4,15 @@
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.2.3-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
-| :------ | :------: |
-| **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json.svg)](https://libraries.io/nuget/Simplify.Web.Json) |
-| **Target Frameworks** | 4.6.2, Standard 2.0 |
+| Latest version        |                           [![Nuget version](http://img.shields.io/badge/nuget-v1.2.4-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/)                           |
+| :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| **Dependencies**      | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json.svg)](https://libraries.io/nuget/Simplify.Web.Json) |
+| **Target Frameworks** |                                                                             4.6.2, Standard 2.0                                                                              |
 
 ## Build status
 
-| Branch | Status |
-| :------ | :------ |
+| Branch     | Status                                                                                                                                                                                 |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) |
 
 ## Examples
@@ -24,11 +24,11 @@ If the controller returns `Json` response class object, then the Framework execu
 ```csharp
 public class MyController : Controller
 {
-	public override ControllerResponse Invoke()
-	{
-		...
-		return new Json(myObj);
-	}
+    public override ControllerResponse Invoke()
+    {
+        ...
+        return new Json(myObj);
+    }
 }
 ```
 
@@ -39,22 +39,23 @@ public class MyController : Controller
 ```csharp
 public void Configuration(IAppBuilder app)
 {
-	...
-	HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
+    ...
+    HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
 
-	app.UseSimplifyWeb();
+    app.UseSimplifyWeb();
 }
 ```
 
 #### Accessing model
 
 JSON string will be deserialized to the controller model on first model access
+
 ```csharp
 public class MyController : Controller<MyModel>
 {
-	public override ControllerResponse Invoke()
-	{
-		Model.
-	}
+    public override ControllerResponse Invoke()
+    {
+        Model.
+    }
 }
 ```
