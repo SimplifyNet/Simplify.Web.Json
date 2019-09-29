@@ -2,7 +2,7 @@
 
 [![Nuget Version](https://img.shields.io/nuget/v/Simplify.Web.Json)](https://www.nuget.org/packages/Simplify.Web.Json/)
 [![Nuget Download](https://img.shields.io/nuget/dt/Simplify.Web.Json)](https://www.nuget.org/packages/Simplify.Web.Json/)
-[![AppVeyor branch](https://img.shields.io/appveyor/ci/i4004/simplify-web-json)](https://ci.appveyor.com/project/i4004/simplify-web-json)
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/i4004/simplify-web-json/master)](https://ci.appveyor.com/project/i4004/simplify-web-json)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json)](https://libraries.io/nuget/Simplify.Web.Json)
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SimplifyNet/Simplify.Web.Json)](https://www.codefactor.io/repository/github/simplifynet/simplify.web.Json)
 ![Platform](https://img.shields.io/badge/platform-.NET%20Standard%202.0%20%7C%20.NET%204.6.2-lightgrey)
