@@ -2,18 +2,19 @@
 
 `Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers.
 
+[![Nuget Version](https://img.shields.io/nuget/v/Simplify.Web.Json)](https://www.nuget.org/packages/Simplify.Web.Json/)
+[![Nuget Download](https://img.shields.io/nuget/dt/Simplify.Web.Json)](https://www.nuget.org/packages/Simplify.Web.Json/)
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/i4004/simplify-web-json)](https://ci.appveyor.com/project/i4004/simplify-web-json)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json)](https://libraries.io/nuget/Simplify.Web.Json)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SimplifyNet/Simplify.Web.Json)](https://www.codefactor.io/repository/github/simplifynet/simplify.web.Json)
+![Platform](https://img.shields.io/badge/platform-.NET%20Standard%202.0%20%7C%20.NET%204.6.2-lightgrey)
+
 ## Package status
 
 | Latest version        |                           [![Nuget version](http://img.shields.io/badge/nuget-v1.2.4-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/)                           |
 | :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Dependencies**      | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json.svg)](https://libraries.io/nuget/Simplify.Web.Json) |
 | **Target Frameworks** |                                                                             4.6.2, Standard 2.0                                                                              |
-
-## Build status
-
-| Branch     | Status                                                                                                                                                                                 |
-| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) |
 
 ## Examples
 
