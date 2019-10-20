@@ -16,13 +16,13 @@ namespace Simplify.Web.Json.ModelBinding.Binders
 		/// <param name="args">The <see cref="ModelBinderEventArgs{T}"/> instance containing the event data.</param>
 		public void Bind<T>(ModelBinderEventArgs<T> args)
 		{
-			if (args.Context.Request.ContentType.Contains("application/json"))
-			{
-				if (string.IsNullOrEmpty(args.Context.RequestBody))
-					throw new ModelValidationException("JSON request body is null or empty");
+			if (!args.Context.Request.ContentType.Contains("application/json"))
+				return;
 
-				args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
-			}
+			if (string.IsNullOrEmpty(args.Context.RequestBody))
+				throw new ModelValidationException("JSON request body is null or empty");
+
+			args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
 		}
 	}
 }
