@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
-using Simplify.Web.ModelBinding;
+using Simplify.Web.Model.Binding;
+using Simplify.Web.Model.Validation;
 
 namespace Simplify.Web.Json.ModelBinding.Binders
 {
