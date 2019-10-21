@@ -38,6 +38,13 @@ public void Configuration(IAppBuilder app)
 
     app.UseSimplifyWeb();
 }
+
+public void ConfigureServices(IServiceCollection services)
+{
+	...
+	DIContainer.Current.RegisterJsonModelBinder();
+	...
+}
 ```
 
 #### Accessing model
