@@ -15,7 +15,7 @@
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
 			New
-			JsonModelBinder container registration method added (#5)
+			* JsonModelBinder container registration method added (#5)
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
