@@ -31,7 +31,7 @@ public class MyController : Controller
 #### Registering binder
 
 ```csharp
-public void Configuration(IAppBuilder app)
+public void Configuration(IApplicationBuilder app)
 {
     ...
     HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
@@ -41,9 +41,9 @@ public void Configuration(IAppBuilder app)
 
 public void ConfigureServices(IServiceCollection services)
 {
-	...
-	DIContainer.Current.RegisterJsonModelBinder();
-	...
+    ...
+    DIContainer.Current.RegisterJsonModelBinder();
+    ...
 }
 ```
 
