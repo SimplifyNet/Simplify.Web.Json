@@ -2,7 +2,7 @@
 using Simplify.Web.Model.Binding;
 using Simplify.Web.Model.Validation;
 
-namespace Simplify.Web.Json.ModelBinding.Binders
+namespace Simplify.Web.Json.Model.Binding
 {
 	/// <summary>
 	/// Provides HTTP request JSON data to object binding
