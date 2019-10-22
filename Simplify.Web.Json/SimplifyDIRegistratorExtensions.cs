@@ -1,5 +1,5 @@
 ﻿using Simplify.DI;
-using Simplify.Web.Json.ModelBinding.Binders;
+using Simplify.Web.Json.Model.Binding;
 
 namespace Simplify.Web.Json
 {
