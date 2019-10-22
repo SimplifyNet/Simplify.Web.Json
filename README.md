@@ -1,21 +1,17 @@
 # Simplify.Web.Json
 
-`Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/i4004/Simplify.Web) web-framework controllers.
+[![Nuget Version](https://img.shields.io/nuget/v/Simplify.Web.Json)](https://www.nuget.org/packages/Simplify.Web.Json/)
+[![Nuget Download](https://img.shields.io/nuget/dt/Simplify.Web.Json)](https://www.nuget.org/packages/Simplify.Web.Json/)
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/i4004/simplify-web-json/master)](https://ci.appveyor.com/project/i4004/simplify-web-json)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Json)](https://libraries.io/nuget/Simplify.Web.Json)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SimplifyNet/Simplify.Web.Json)](https://www.codefactor.io/repository/github/simplifynet/simplify.web.Json)
+![Platform](https://img.shields.io/badge/platform-.NET%20Standard%202.0%20%7C%20.NET%204.6.2-lightgrey)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=SimplifyNet/Simplify.Web.Json)](https://dependabot.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
-## Package status
+`Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers.
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.2.1-blue.png)](https://www.nuget.org/packages/Simplify.Web.Json/) |
-| :------ | :------: |
-| **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.Json.png)](http://nugetstatus.com/packages/Simplify.Web.Json) |
-| **Target Frameworks** | 4.6.2, Standard 2.0 |
-
-## Build status
-
-| Branch | Status |
-| :------ | :------ |
-| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/dfi53jjk9klcc4bx/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-json/branch/master) |
-
-## Examples
+## Quick Start
 
 ### Sending JSON to client
 
@@ -24,11 +20,11 @@ If the controller returns `Json` response class object, then the Framework execu
 ```csharp
 public class MyController : Controller
 {
-	public override ControllerResponse Invoke()
-	{
-		...
-		return new Json(myObj);
-	}
+    public override ControllerResponse Invoke()
+    {
+        ...
+        return new Json(myObj);
+    }
 }
 ```
 
@@ -37,24 +33,32 @@ public class MyController : Controller
 #### Registering binder
 
 ```csharp
-public void Configuration(IAppBuilder app)
+public void Configuration(IApplicationBuilder app)
 {
-	...
-	HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
+    ...
+    HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
 
-	app.UseSimplifyWeb();
+    app.UseSimplifyWeb();
+}
+
+public void ConfigureServices(IServiceCollection services)
+{
+    ...
+    DIContainer.Current.RegisterJsonModelBinder();
+    ...
 }
 ```
 
 #### Accessing model
 
 JSON string will be deserialized to the controller model on first model access
+
 ```csharp
 public class MyController : Controller<MyModel>
 {
-	public override ControllerResponse Invoke()
-	{
-		Model.
-	}
+    public override ControllerResponse Invoke()
+    {
+        Model.
+    }
 }
 ```
