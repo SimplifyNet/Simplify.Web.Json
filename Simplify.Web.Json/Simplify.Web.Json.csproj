@@ -20,7 +20,7 @@
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="System.Text.Json" Version="4.6.0-preview8.19405.3" />
+		<PackageReference Include="System.Text.Json" Version="4.6.0" />
 		<PackageReference Include="Simplify.Web" Version="3.0.0" />
 	</ItemGroup>
 </Project>
