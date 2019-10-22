@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+	{
+		"name": "Simplify.Web.Json.Tester Launch",
+		"type": "coreclr",
+		"request": "launch",
+		"preLaunchTask": "Build",
+		"program": "${workspaceFolder}/src/Simplify.Web.Json.Tester/bin/Debug/netcoreapp3.0/Simplify.Web.Json.Tester.dll",
+		"cwd": "${workspaceFolder}/src/Simplify.Web.Json.Tester",
+		"internalConsoleOptions": "openOnSessionStart",
+		"env":
+		{
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		}
+	}]
+}
