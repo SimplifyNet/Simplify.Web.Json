@@ -1,8 +1,5 @@
-﻿using Newtonsoft.Json;
-
-namespace TesterApp.ViewModels
+﻿namespace TesterApp.ViewModels
 {
-	[JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
 	public class TestViewModel
 	{
 		public string Prop1 { get; set; }
