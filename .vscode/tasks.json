@@ -7,7 +7,7 @@
 		"type": "process",
 		"args": [
 			"build",
-			"${workspaceFolder}/Simplify.Web.Json.sln"
+			"${workspaceFolder}/src/Simplify.Web.Json.sln"
 		],
 		"problemMatcher": "$msCompile",
 		"group":

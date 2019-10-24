@@ -9,9 +9,10 @@ configuration: Release
 platform: Any CPU
 
 before_build:
-  - nuget restore
+  - nuget restore src/Simplify.Web.Json.sln
 
 build:
+  project: src/Simplify.Web.Json.sln
   publish_nuget: true
   parallel: true
   verbosity: minimal
