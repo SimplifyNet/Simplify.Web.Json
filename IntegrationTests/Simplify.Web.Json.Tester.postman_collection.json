@@ -55,6 +55,25 @@
 		},
 		{
 			"name": "TestOut",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ea67aa25-0f40-4700-b356-fc58ef45b32f",
+						"exec": [
+							"// Tests",
+							"tests[\"Get Access Token\"] = responseCode.code === 200;",
+							"",
+							"var jsonReply = JSON.parse(responseBody);",
+							"",
+							"// Tests",
+							"",
+							"tests[\"Prop1 Exist\"] = jsonReply.Prop1 == \"Hello\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "noauth"

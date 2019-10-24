@@ -5,7 +5,7 @@
 		"anonymousAuthentication": true,
 		"iisExpress":
 		{
-			"applicationUrl": "http://localhost:5000/",
+			"applicationUrl": "http://localhost:5000",
 			"sslPort": 0
 		}
 	},
@@ -19,7 +19,7 @@
 				"ASPNETCORE_ENVIRONMENT": "Development"
 			}
 		},
-		"Simplify.Web.Json.Tester":
+		"TesterApp":
 		{
 			"commandName": "Project",
 			"environmentVariables":
@@ -27,7 +27,7 @@
 				"ASPNETCORE_ENVIRONMENT": "Development"
 			},
 			"launchBrowser": true,
-			"applicationUrl": "http://localhost:5000/"
+			"applicationUrl": "http://localhost:5000"
 		}
 	}
 }

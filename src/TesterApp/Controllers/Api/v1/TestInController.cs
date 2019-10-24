@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
+using Simplify.Web;
 using Simplify.Web.Attributes;
-using Simplify.Web.Json.Tester.ViewModels;
+using TesterApp.ViewModels;
 
-namespace Simplify.Web.Json.Tester.Controllers.Api.v1
+namespace TesterApp.Controllers.Api.v1
 {
 	[Post("/api/v1/testIn")]
 	public class TestInController : Controller<TestViewModel>

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Simplify.Web.Json.Tester.ViewModels
+namespace TesterApp.ViewModels
 {
 	[JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
 	public class TestViewModel

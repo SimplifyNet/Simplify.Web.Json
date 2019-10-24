@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Simplify.Web.Json.Tester
+namespace TesterApp
 {
 	public class Program
 	{

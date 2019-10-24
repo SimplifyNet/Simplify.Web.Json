@@ -1,6 +1,7 @@
 ﻿using Simplify.DI;
+using Simplify.Web.Json;
 
-namespace Simplify.Web.Json.Tester.Setup
+namespace TesterApp.Setup
 {
 	public static class IocRegistrations
 	{
