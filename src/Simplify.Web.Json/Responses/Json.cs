@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Simplify.Web.Json.Responses
 {
@@ -32,12 +33,12 @@ namespace Simplify.Web.Json.Responses
 		/// Processes this response
 		/// </summary>
 		/// <returns></returns>
-		public override ControllerResponseResult Process()
+		public override async Task<ControllerResponseResult> Process()
 		{
 			Context.Response.ContentType = "application/json";
 			Context.Response.StatusCode = _statusCode;
 
-			ResponseWriter.Write(JsonConvert.SerializeObject(_objectToConvert), Context.Response);
+			await ResponseWriter.WriteAsync(JsonConvert.SerializeObject(_objectToConvert), Context.Response);
 
 			return ControllerResponseResult.RawOutput;
 		}

@@ -7,21 +7,21 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web JSON controller response and model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.4</Version>
+		<Version>2.0-pre01</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Json</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
-			New
-			* JsonModelBinder container registration method added (#5)
+			Breaking Changes
+			* Upgrade to Simplify.Web 4 (#8)
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="3.0.0" />
+		<PackageReference Include="Simplify.Web" Version="4.0.0-pre01" />
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 	</ItemGroup>
 </Project>
