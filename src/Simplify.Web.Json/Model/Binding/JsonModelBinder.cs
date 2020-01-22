@@ -22,10 +22,10 @@ namespace Simplify.Web.Json.Model.Binding
 			if (!args.Context.Request.ContentType.Contains("application/json"))
 				return;
 
+			await args.Context.ReadRequestBodyAsync();
+
 			if (string.IsNullOrEmpty(args.Context.RequestBody))
 				throw new ModelValidationException("JSON request body is null or empty");
-
-			await args.Context.ReadRequestBodyAsync();
 
 			args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
 		}
