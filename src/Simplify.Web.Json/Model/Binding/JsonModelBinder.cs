@@ -19,7 +19,7 @@ namespace Simplify.Web.Json.Model.Binding
 		/// <exception cref="ModelValidationException">JSON request body is null or empty</exception>
 		public async Task BindAsync<T>(ModelBinderEventArgs<T> args)
 		{
-			if (!args.Context.Request.ContentType.Contains("application/json"))
+			if (args.Context.Request.ContentType == null || !args.Context.Request.ContentType.Contains("application/json"))
 				return;
 
 			await args.Context.ReadRequestBodyAsync();
