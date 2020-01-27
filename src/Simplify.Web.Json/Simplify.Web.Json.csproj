@@ -1,27 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+		<TargetFrameworks>netcoreapp3.1;netcoreapp3.0;netstandard2.0;net462</TargetFrameworks>
 		<LangVersion>8.0</LangVersion>
 		<Nullable>enable</Nullable>
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
 		<Description>Simplify.Web JSON controller response and model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>2.0</Version>
+		<Version>2.0.1</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Json</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
-			Breaking Changes
-			* Upgrade to Simplify.Web 4 (#8)
+			Updates
+			* Upgrade to Simplify.Web 4.0.2
+			* .NET Core App 3.1 and .NET Core App 3.0 target frameworks added
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.0.0" />
+		<PackageReference Include="Simplify.Web" Version="4.0.2" />
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 	</ItemGroup>
 </Project>
