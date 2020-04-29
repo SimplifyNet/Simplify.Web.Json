@@ -7,7 +7,7 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web JSON controller response and model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>2.0.1</Version>
+		<Version>2.0.2</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Json</RepositoryUrl>
@@ -15,17 +15,13 @@
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.Web 4.0.2
-			* .NET Core App 3.1 and .NET Core App 3.0 target frameworks added
-			Bug Fixes
-			* JsonModelBinder checking ContentType for null added
-			* ReadRequestBodyAsync moved before accessing RequestBody (caused synchronous model access)
+			* Upgrade to Simplify.Web 4.1.1
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.1.0" />
+		<PackageReference Include="Simplify.Web" Version="4.1.1" />
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 	</ItemGroup>
 </Project>
