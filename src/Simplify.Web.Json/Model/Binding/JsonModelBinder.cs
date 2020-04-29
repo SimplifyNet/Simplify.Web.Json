@@ -10,6 +10,17 @@ namespace Simplify.Web.Json.Model.Binding
 	/// </summary>
 	public class JsonModelBinder : IModelBinder
 	{
+		private readonly JsonSerializerSettings? _settings;
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="JsonModelBinder"/> class.
+		/// </summary>
+		/// <param name="settings">The settings.</param>
+		public JsonModelBinder(JsonSerializerSettings? settings = null)
+		{
+			_settings = settings;
+		}
+
 		/// <summary>
 		/// Binds the model asynchronously.
 		/// </summary>
@@ -27,7 +38,7 @@ namespace Simplify.Web.Json.Model.Binding
 			if (string.IsNullOrEmpty(args.Context.RequestBody))
 				throw new ModelValidationException("JSON request body is null or empty");
 
-			args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody));
+			args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody, _settings));
 		}
 	}
 }
