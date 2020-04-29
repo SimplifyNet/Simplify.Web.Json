@@ -7,17 +7,19 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web JSON controller response and model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>2.0.2</Version>
+		<Version>2.1.1</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
-		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Json</RepositoryUrl>
-		<RepositoryType>GIT</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
 			Updates
 			* Upgrade to Simplify.Web 4.1.1
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
