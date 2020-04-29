@@ -14,8 +14,8 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web JSON</PackageTags>
 		<PackageReleaseNotes>
-Updates
-* Upgrade to Simplify.Web 4.1.1
+			Updates
+			* Upgrade to Simplify.Web 4.1.1
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
