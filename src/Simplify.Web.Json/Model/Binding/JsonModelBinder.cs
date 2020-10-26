@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Simplify.Web.Model.Binding;
 using Simplify.Web.Model.Validation;
@@ -38,7 +39,9 @@ namespace Simplify.Web.Json.Model.Binding
 			if (string.IsNullOrEmpty(args.Context.RequestBody))
 				throw new ModelValidationException("JSON request body is null or empty");
 
-			args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody, _settings));
+			var deserializedModel = JsonConvert.DeserializeObject<T>(args.Context.RequestBody, _settings) ?? throw new InvalidOperationException("Deserialized model is null");
+
+			args.SetModel(deserializedModel);
 		}
 	}
 }
