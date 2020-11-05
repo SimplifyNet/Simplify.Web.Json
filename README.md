@@ -51,6 +51,22 @@ public void ConfigureServices(IServiceCollection services)
 
 #### Accessing model
 
+##### Asynchronous
+
+```csharp
+public class MyController : ControllerAsync<MyModel>
+{
+    public override async Task<ControllerResponse> Invoke()
+    {
+        await ReadModelAsync();
+
+        Model.
+    }
+}
+```
+
+##### Synchronous
+
 JSON string will be deserialized to the controller model on first model access
 
 ```csharp
