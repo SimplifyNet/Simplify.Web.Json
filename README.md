@@ -9,7 +9,7 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=SimplifyNet/Simplify.Web.Json)](https://dependabot.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
-`Simplify.Web.Json` is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers.
+[Simplify.Web.Json](https://www.nuget.org/packages/Simplify.Web.Json/) is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers.
 
 ## Quick Start
 
