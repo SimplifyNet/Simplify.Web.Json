@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>netcoreapp3.1;netstandard2.0;net462</TargetFrameworks>
-		<LangVersion>8.0</LangVersion>
+		<LangVersion>9.0</LangVersion>
 		<Nullable>enable</Nullable>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -11,8 +11,10 @@
 
 		<Version>2.1.2</Version>
 		<PackageReleaseNotes>
+			Breaking
+			* .NET Core App 3.0 support drop
 			Updates
-			* Upgrade to Simplify.Web 4.2.14 
+			* Upgrade to Simplify.Web 4.2.14
 		</PackageReleaseNotes>
 
 		<Authors>Alexander Krylkov</Authors>
