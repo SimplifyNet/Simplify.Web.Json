@@ -1,27 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>netcoreapp3.1;netcoreapp3.0;netstandard2.0;net462</TargetFrameworks>
+		<TargetFrameworks>netcoreapp3.1;netstandard2.0;net462</TargetFrameworks>
 		<LangVersion>8.0</LangVersion>
 		<Nullable>enable</Nullable>
-		<Authors>Alexander Krylkov</Authors>
-		<Product>Simplify</Product>
-		<Description>Simplify.Web JSON controller response and model binder</Description>
-		<Copyright>Licensed under LGPL</Copyright>
-		<Version>2.1.2</Version>
-		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
-		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<PackageTags>Simplify.Web JSON</PackageTags>
-		<PackageReleaseNotes>
-			Updates
-			* Upgrade to Simplify.Web 4.2.* (floating version set)
-			* Upgrade to Newtonsoft.Json 12.0.* (floating version set)
-		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
+
+		<Version>2.1.2</Version>
+		<PackageReleaseNotes>
+			Updates
+			* Upgrade to Simplify.Web 4.2.* (floating version set)
+			* Upgrade to Newtonsoft.Json 12.0.* (floating version set)
+		</PackageReleaseNotes>
+
+		<Authors>Alexander Krylkov</Authors>
+		<Product>Simplify</Product>
+		<Description>Simplify.Web JSON controller response and model binder</Description>
+		<Copyright>Licensed under LGPL</Copyright>
+		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageTags>Simplify.Web JSON</PackageTags>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Simplify.Web" Version="4.2.*" />

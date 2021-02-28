@@ -17,10 +17,7 @@ namespace Simplify.Web.Json.Model.Binding
 		/// Initializes a new instance of the <see cref="JsonModelBinder"/> class.
 		/// </summary>
 		/// <param name="settings">The settings.</param>
-		public JsonModelBinder(JsonSerializerSettings? settings = null)
-		{
-			_settings = settings;
-		}
+		public JsonModelBinder(JsonSerializerSettings? settings = null) => _settings = settings;
 
 		/// <summary>
 		/// Binds the model asynchronously.
