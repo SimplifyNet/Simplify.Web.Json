@@ -12,8 +12,7 @@
 		<Version>2.1.2</Version>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.Web 4.2.* (floating version set)
-			* Upgrade to Newtonsoft.Json 12.0.* (floating version set)
+			* Upgrade to Simplify.Web 4.2.14 
 		</PackageReleaseNotes>
 
 		<Authors>Alexander Krylkov</Authors>
