@@ -7,7 +7,7 @@
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Json.xml</DocumentationFile>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
 		<Version>2.2</Version>
 		<PackageReleaseNotes>
@@ -20,12 +20,15 @@
 		<Description>Simplify.Web JSON controller response and model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Json</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
+		<PackageIcon>icon.png</PackageIcon>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageTags>Simplify.Web JSON</PackageTags>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Simplify.Web" Version="4.2.*" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.*" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
 </Project>
