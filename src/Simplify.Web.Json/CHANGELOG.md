@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2] - 2021-11-24
+
+### Dependencies
+
+- Simplify.Web bump to 4.5
+
+
 ## [2.2.1] - 2021-04-26
 
 ### Added
