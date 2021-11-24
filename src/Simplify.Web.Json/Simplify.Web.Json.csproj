@@ -23,7 +23,7 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Json/tree/master/src/Simplify.Web.Json/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.4.*" />
+		<PackageReference Include="Simplify.Web" Version="4.5.*" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.*" />
 	</ItemGroup>
 	<ItemGroup>
