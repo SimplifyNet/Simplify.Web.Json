@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.4] - 2022-11-30
+
+### Dependencies
+
+- Newtonsoft.Json bump to 3.0.2 (PR#22)
+
 ## [2.2.3] - 2022-05-18
 
 ### Added
