@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- Newtonsoft.Json bump to 3.0.2 (PR#22)
+- Newtonsoft.Json bump to 13.0.2 (PR#22)
 
 ## [2.2.3] - 2022-05-18
 
