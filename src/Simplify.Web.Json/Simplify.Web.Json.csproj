@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.0;net462</TargetFrameworks>
+		<TargetFrameworks>net6.0;netstandard2.1;netstandard2.0;net48</TargetFrameworks>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<CheckEolTargetFramework>false</CheckEolTargetFramework>
@@ -24,7 +24,7 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Json/tree/master/src/Simplify.Web.Json/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.6.0" />
+		<PackageReference Include="Simplify.Web" Version="4.7.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 	<ItemGroup>
