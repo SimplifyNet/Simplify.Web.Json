@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.2.6] - 2023-08-20
+## [2.3.0] - 2023-08-20
 
 ### Removed
 
@@ -10,6 +10,7 @@
 
 ### Added
 
+- Throw ModelValidationException in case of JsonReaderException (#24)
 - .NET Standard 2.1 support
 - .NET 4.8 support
 
