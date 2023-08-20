@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.2.6] - 2023-08-20
+
+### Removed
+
+- .NET 5 support
+- .NET Core 3.1 support
+- .NET Framework 4.6.2 support
+
+### Added
+
+- .NET Standard 2.1 support
+- .NET 4.8 support
+
+### Dependencies
+
+- Simplify.Web bump to 4.7
+
 ## [2.2.5] - 2023-03-11
 
 ### Dependencies
