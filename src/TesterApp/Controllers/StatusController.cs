@@ -1,11 +1,10 @@
 ﻿using Simplify.Web;
 using Simplify.Web.Attributes;
 
-namespace TesterApp.Controllers
+namespace TesterApp.Controllers;
+
+[Get("status")]
+public class StatusController : Controller
 {
-	[Get("status")]
-	public class StatusController : Controller
-	{
-		public override ControllerResponse Invoke() => Content("Service is running!");
-	}
+	public override ControllerResponse Invoke() => Content("Service is running!");
 }

@@ -1,14 +1,25 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+using Simplify.DI;
+using Simplify.Web;
+using Simplify.Web.Json.Model.Binding;
+using Simplify.Web.Model;
+using TesterApp.Setup;
 
-namespace TesterApp
-{
-	public class Program
-	{
-		public static void Main(string[] args) => CreateWebHostBuilder(args).Build().Run();
+var builder = WebApplication.CreateBuilder(args);
 
-		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-			WebHost.CreateDefaultBuilder(args)
-			.UseStartup<Startup>();
-	}
-}
+DIContainer.Current
+	.RegisterAll()
+	.Verify();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+	app.UseDeveloperExceptionPage();
+
+// Enabling Simplify.Web JSON requests handling
+HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
+
+app.UseSimplifyWebWithoutRegistrations();
+
+app.Run();

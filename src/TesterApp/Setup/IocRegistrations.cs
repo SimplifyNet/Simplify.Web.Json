@@ -1,10 +1,17 @@
 ﻿using Simplify.DI;
+using Simplify.Web;
 using Simplify.Web.Json;
 
-namespace TesterApp.Setup
+namespace TesterApp.Setup;
+
+public static class IocRegistrations
 {
-	public static class IocRegistrations
+	public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 	{
-		public static void Register() => DIContainer.Current.RegisterJsonModelBinder();
+		provider
+			.RegisterSimplifyWeb()
+			.RegisterJsonModelBinder();
+
+		return provider;
 	}
 }
