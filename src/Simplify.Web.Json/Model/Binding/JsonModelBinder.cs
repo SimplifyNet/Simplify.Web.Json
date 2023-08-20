@@ -36,8 +36,17 @@ public class JsonModelBinder : IModelBinder
 		if (string.IsNullOrEmpty(args.Context.RequestBody))
 			throw new ModelValidationException("JSON request body is null or empty");
 
-		var deserializedModel = JsonConvert.DeserializeObject<T>(args.Context.RequestBody, _settings) ?? throw new InvalidOperationException("Deserialized model is null");
-
-		args.SetModel(deserializedModel);
+		try
+		{
+			args.SetModel(JsonConvert.DeserializeObject<T>(args.Context.RequestBody, _settings) ?? throw new InvalidOperationException("Deserialized model is null"));
+		}
+		catch (JsonReaderException e)
+		{
+			throw new ModelValidationException("Error deserializing JSON model. " + e.Message);
+		}
+		catch (JsonSerializationException e)
+		{
+			throw new ModelValidationException("Error deserializing JSON model. " + e.Message);
+		}
 	}
 }
