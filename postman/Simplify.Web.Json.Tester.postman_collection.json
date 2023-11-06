@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "cddfc51b-17d2-4e4b-b3a4-a6a9037ee3db",
 		"name": "Simplify.Web.Json.Tester",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8112525"
 	},
 	"item": [
 		{
@@ -37,7 +38,7 @@
 					"raw": "{\n\t\"Prop1\": \"Hello!\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/testIn",
+					"raw": "http://localhost:5000/api/v1/test-in",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -46,7 +47,101 @@
 					"path": [
 						"api",
 						"v1",
-						"testIn"
+						"test-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestIn Array",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"HTTP Code Test\"] = responseCode.code === 204;",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n\t    \"Prop1\": \"Hello!\"\n    },\n    {\n\t    \"Prop1\": \"Hello 2!\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/test-in-array",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"test-in-array"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestIn IList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"HTTP Code Test\"] = responseCode.code === 204;",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n\t    \"Prop1\": \"Hello!\"\n    },\n    {\n\t    \"Prop1\": \"Hello 2!\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/test-in-ilist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"test-in-ilist"
 					]
 				}
 			},
@@ -86,7 +181,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5000/api/v1/testOut",
+					"raw": "http://localhost:5000/api/v1/test-out",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -95,7 +190,7 @@
 					"path": [
 						"api",
 						"v1",
-						"testOut"
+						"test-out"
 					]
 				}
 			},
