@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.3.1] - 2023-12-20
+
+### Dependencies
+
+- Simplify.Web bump to 4.8
+
 ## [2.3.0] - 2023-08-20
 
 ### Removed
