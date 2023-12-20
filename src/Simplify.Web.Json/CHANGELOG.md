@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- Simplify.Web bump to 4.8
+- Simplify.Web bump to 4.8.1
 
 ## [2.3.0] - 2023-08-20
 
