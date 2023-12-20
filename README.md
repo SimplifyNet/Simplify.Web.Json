@@ -76,3 +76,30 @@ public class MyController : Controller<MyModel>
     }
 }
 ```
+
+## Contributing
+
+There are many ways in which you can participate in the project. Like most open-source software projects, contributing code is just one of many outlets where you can help improve. Some of the things that you could help out with are:
+
+- Documentation (both code and features)
+- Bug reports
+- Bug fixes
+- Feature requests
+- Feature implementations
+- Test coverage
+- Code quality
+- Sample applications
+
+## Related Projects
+
+Additional extensions to Simplify.Web live in their own repositories on GitHub. For example:
+
+- [Simplify.Web.Postman](https://github.com/SimplifyNet/Simplify.Web.Postman) - Postman collection and environment generation
+- [Simplify.Web.Swagger](https://github.com/SimplifyNet/Simplify.Web.Swagger) - Swagger generation for controllers
+- [Simplify.Web.Multipart](https://github.com/SimplifyNet/Simplify.Web.Multipart) - multipart form model binder
+- [Simplify.Web.MessageBox](https://github.com/SimplifyNet/Simplify.Web.MessageBox) - non-interactive server side message box
+- [Simplify.Web.Templates](https://github.com/SimplifyNet/Simplify.Web.Templates) - .NET projects templates
+
+## License
+
+Licensed under the GNU LESSER GENERAL PUBLIC LICENSE
