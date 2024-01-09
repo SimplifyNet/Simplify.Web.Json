@@ -24,7 +24,7 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Json/tree/master/src/Simplify.Web.Json/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.8.1" />
+		<PackageReference Include="Simplify.Web" Version="4.9.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 	<ItemGroup>
