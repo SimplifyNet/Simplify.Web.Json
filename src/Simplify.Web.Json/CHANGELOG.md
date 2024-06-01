@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.0] - 2024-06-01
+
+### Dependencies
+
+- Simplify.Web bump to 5.0
+
+### Removed
+
+- .NET 4.8 explicit support
+
 ## [2.3.1] - 2023-12-20
 
 ### Dependencies
