@@ -16,9 +16,9 @@
 If the controller returns `Json` response class object, then the Framework execution will be stopped, object will be parsed to JSON string and sent to client
 
 ```csharp
-public class MyController : Controller
+public class MyController : Controller2
 {
-    public override ControllerResponse Invoke()
+    public ControllerResponse Invoke()
     {
         ...
         return new Json(myObj);
@@ -52,9 +52,9 @@ public void ConfigureServices(IServiceCollection services)
 ##### Asynchronous
 
 ```csharp
-public class MyController : ControllerAsync<MyModel>
+public class MyController : Controller2<MyModel>
 {
-    public override async Task<ControllerResponse> Invoke()
+    public async Task<ControllerResponse> Invoke()
     {
         await ReadModelAsync();
 
@@ -68,9 +68,9 @@ public class MyController : ControllerAsync<MyModel>
 JSON string will be deserialized to the controller model on first model access
 
 ```csharp
-public class MyController : Controller<MyModel>
+public class MyController : Controller2<MyModel>
 {
-    public override ControllerResponse Invoke()
+    public ControllerResponse Invoke()
     {
         Model.
     }
