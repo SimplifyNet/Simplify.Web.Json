@@ -13,8 +13,8 @@ public class TestInController : AsyncController<TestViewModel>
 	{
 		await ReadModelAsync();
 
-		Trace.WriteLine($"Object prop1: {Model.Prop1}");
-		Trace.WriteLine($"Object prop2: {Model.Prop2}");
+		Trace.TraceInformation($"Object prop1: {Model.Prop1}");
+		Trace.TraceInformation($"Object prop2: {Model.Prop2}");
 
 		return NoContent();
 	}
