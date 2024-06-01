@@ -18,8 +18,10 @@ if (app.Environment.IsDevelopment())
 	app.UseDeveloperExceptionPage();
 
 // Enabling Simplify.Web JSON requests handling
+
+HttpModelHandler.ModelBindersTypes.Clear();
 HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
 
-app.UseSimplifyWebWithoutRegistrations();
+app.UseSimplifyWeb();
 
-app.Run();
+await app.RunAsync();

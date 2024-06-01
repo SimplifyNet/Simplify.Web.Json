@@ -6,9 +6,15 @@ namespace Simplify.Web.Json.Responses;
 /// <summary>
 /// Provides controller JSON response (send only JSON string to response)
 /// </summary>
-public class Json : ControllerResponse
+/// <seealso cref="ControllerResponse" />
+/// <remarks>
+/// Initializes a new instance of the <see cref="Json"/> class.
+/// </remarks>
+/// <param name="objectToConvert">The object to convert to JSON.</param>
+/// <param name="statusCode">The HTTP response status code.</param>
+public class Json(object objectToConvert, int statusCode = 200) : ControllerResponse
 {
-	private readonly object _objectToConvert;
+	private readonly object _objectToConvert = objectToConvert;
 
 	/// <summary>
 	/// Gets the HTTP response status code.
@@ -16,30 +22,18 @@ public class Json : ControllerResponse
 	/// <value>
 	/// The HTTP response status code.
 	/// </value>
-	private readonly int _statusCode;
+	private readonly int _statusCode = statusCode;
 
 	/// <summary>
-	/// Initializes a new instance of the <see cref="Json"/> class.
+	/// Executes this response asynchronously.
 	/// </summary>
-	/// <param name="objectToConvert">The object to convert to JSON.</param>
-	/// <param name="statusCode">The HTTP response status code.</param>
-	public Json(object objectToConvert, int statusCode = 200)
-	{
-		_objectToConvert = objectToConvert;
-		_statusCode = statusCode;
-	}
-
-	/// <summary>
-	/// Processes this response
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<ControllerResponseResult> Process()
+	public override async Task<ResponseBehavior> ExecuteAsync()
 	{
 		Context.Response.ContentType = "application/json";
 		Context.Response.StatusCode = _statusCode;
 
-		await ResponseWriter.WriteAsync(JsonConvert.SerializeObject(_objectToConvert), Context.Response);
+		await ResponseWriter.WriteAsync(Context.Response, JsonConvert.SerializeObject(_objectToConvert));
 
-		return ControllerResponseResult.RawOutput;
+		return ResponseBehavior.RawOutput;
 	}
 }
