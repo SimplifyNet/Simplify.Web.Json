@@ -10,7 +10,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-		<Version>2.4-pre01</Version>
+		<Version>2.4</Version>
 
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
@@ -25,7 +25,7 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Json/tree/master/src/Simplify.Web.Json/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="5.0-pre01" />
+		<PackageReference Include="Simplify.Web" Version="5.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 	<ItemGroup>
