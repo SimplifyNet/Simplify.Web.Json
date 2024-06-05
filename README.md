@@ -42,6 +42,7 @@ public void Configuration(IApplicationBuilder app)
 public void ConfigureServices(IServiceCollection services)
 {
     ...
+	HttpModelHandler.ModelBindersTypes.Clear(); // This is required to remove built-in JSON model binder (based on System.Text.Json)
     DIContainer.Current.RegisterJsonModelBinder();
     ...
 }
