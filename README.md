@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-.NET%206.0%20%7C%20.NET%20Standard%202.1%20%7C%20.NET%20Standard%202.0-lightgrey)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
-[Simplify.Web.Json](https://www.nuget.org/packages/Simplify.Web.Json/) is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers.
+[Simplify.Web.Json](https://www.nuget.org/packages/Simplify.Web.Json/) is a package which provides JSON serialization/deserialization for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework controllers using `Newtonsoft.Json`.
 
 ## Quick Start
 
