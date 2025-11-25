@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1] - 2025-11-25
+
+### Dependencies
+
+- Simplify.Web bump to 5.1
+- Newtonsoft.Json bump to 13.0.4
+
 ## [2.4.0] - 2024-06-05
 
 ### Dependencies
