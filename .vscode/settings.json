@@ -1,8 +1,12 @@
 {
 	"cSpell.words": [
+		"ASPNETCORE",
 		"cref",
 		"deserialized",
+		"Krylkov",
+		"netstandard",
 		"Newtonsoft",
-		"registrator"
+		"registrator",
+		"snupkg"
 	]
 }
