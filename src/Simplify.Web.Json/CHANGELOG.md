@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.4.2] - 2026-06-26
+
+### Added
+
+- .NET 10.0 explicit support
+
+### Removed
+
+- .NET 6.0 explicit support
+
+### Dependencies
+
+- Simplify.Web bump to 5.3
+
 ## [2.4.1] - 2025-11-25
 
 ### Dependencies
