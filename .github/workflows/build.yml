@@ -56,7 +56,7 @@ jobs:
       - name: Extract changelog entry
         run: |
           awk '/^## \[/{if(f) exit; f=1; next} f' \
-            src/Simplify.Web.Json/CHANGELOG.md \
+            Simplify.Web.Json/CHANGELOG.md \
             > /tmp/release_notes.md
 
       - name: Create release
